@@ -2,11 +2,11 @@ FROM node:8-alpine as builder
 
 WORKDIR /var/www/html
 
-COPY package.json .
+COPY package.json ./
 
 RUN npm install 
 
-COPY . .
+COPY . ./
 
 RUN npm run build
 
