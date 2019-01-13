@@ -9,5 +9,5 @@ before_install:
   - docker build -t dev-react-app -f Dockerfile.dev . 
 
 scripts:
-  - docker run dev-react npm run test -- --coverage
+  - docker run dev-react-app npm run test -- --coverage
 
