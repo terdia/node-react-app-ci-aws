@@ -8,6 +8,6 @@ services:
 before_install:
   - docker build -t dev-react-app -f Dockerfile.dev . 
 
-scripts:
+script:
   - docker run dev-react-app npm run test -- --coverage
 
